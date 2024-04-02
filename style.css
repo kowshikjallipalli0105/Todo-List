@@ -1,0 +1,65 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+#main {
+    background: linear-gradient(135deg, #6b45f3, #ff748e);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease-in-out;
+}
+#container:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.task-item {
+    margin-bottom: 10px;
+}
+.action-btn {
+    margin-left: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: none;
+    background-color:slategray;
+    color: #fff;
+    border-radius: 5px;
+}
+.action-btn:hover {
+    background-color: #0056b3;
+}
+.completed-task {
+    text-decoration: line-through;
+    color: #888;
+}
+.edit-btn {
+    background-color: yellowgreen;
+}
+.edit-btn:hover {
+    content: 'edit';
+}
+.complete-btn {
+    background-color: orange;
+}
+/* Style for delete button with "x" icon */
+.delete-btn {
+    background-color: #dc3545;
+}
+.delete-btn::before {
+    content: 'x';
+    display: inline-block;
+    font-weight: bold;
+}
